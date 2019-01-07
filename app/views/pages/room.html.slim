@@ -1,0 +1,27 @@
+.row
+  .container
+    .row
+      .col-md-6.col-md-offset-3
+        .row
+          .col-md-12
+            h1 chat room
+            .panel.panel-primary
+              .panel-heading
+                i.glyphicon.glyphicon-user
+                h6.panel-title ChatBox
+                .btn-group.btn-group-xs.pull-right
+                  | Hello,
+                  span#txtName
+              .panel-body
+                .row
+                  #scollDiv.col-sm-12
+                    table#messageContainer.table.table-hover
+                      tr
+              .panel-footer
+                form
+                  .input-group.input-group-sm
+                    span.input-group-addon
+                      i.glyphicon.glyphicon-pencil
+                    input#txtText.form-control placeholder=("Type your message here ..") type="text" /
+                    span.input-group-btn
+                      button#btnSend.btn.btn-primary type="submit"  Send
